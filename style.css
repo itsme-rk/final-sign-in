@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('husky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: orangered;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: orangered;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color: orangered;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-field button.dissable {
+    background: #eaeaea;
+    color: #555;
+}
+
+.return {
+    margin-right: 310px;
+    background-color: orangered;
+    font-size: 20px;
+    border-radius: 10px 5px;
+    border-color: transparent;
+}
+
+.return .bx-arrow-back {
+    color: white;
+    font-weight: bold;
+    font-size: 30ox;
+}
+
+.acc #button {
+    padding: 20px 9px 7px 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.acc #button i {
+    border: none;
+}
+
+.acc h5 {
+    margin-top: 20px;
+}
+
+.btn-field button.signin-active {
+    background: orangered;
+    color: #fff;
+}
+
+.btn-field button.signup-active {
+    background: #eaeaea;
+    color: #555;
+}

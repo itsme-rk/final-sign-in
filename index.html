@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <button class="return"><a href="home.html"><i class='bx bx-arrow-back'></i></a></button>
+            <h1>
+                <span id="titleText">SIGN UP</span>
+                <i class="fa-solid fa-paw" style="font-size: 30px;"></i>
+            </h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="field">
+                        <i class="fa-solid fa-user-tie" style="font-size: 20px;"></i>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope-circle-check" style="font-size: 20px;"></i>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-unlock" style="font-size: 20px;"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p> Lost password <a href="#"><span> CLICK HERE! </span> </a></p>
+                </div>
+
+                <div class="btn-field">
+                    <button type="button" id="signupbtn"> SIGN UP </button>
+                    <button type="button" class="dissable" id="signinbtn"> SIGN IN </button>
+                </div>
+
+                <div class="acc">
+                    <h5 style="color: orangered;">OR Sign in with your social account</h5>
+                    <button id="button" style="margin-right: 10px; background: transparent;"><i
+                        class="fa-brands fa-google" style="font-size: 20px;"></i></button>
+                <button id="button" style="margin-right: 10px; background: transparent;"><i
+                        class="fa-brands fa-facebook" style="font-size: 20px;"></i></button>
+                <button id="button" style="margin-right: 10px; background: transparent;"><i
+                        class="fa-brands fa-apple" style="font-size: 20px;"></i></button>
+                <button id="button" style="margin-right: 10px; background: transparent;"><i
+                        class="fa-solid fa-phone" style="font-size: 20px;"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
